@@ -2,7 +2,7 @@
 
 QuickApp BUIENRADAR WEATHER 
 
-The current observations are measured by KNMI weather stations spread across the country and are updated every 10 minutes. The weather report is updated several times a day by the Buienradar meteorologists.
+The Buienradar Weather contains the current Dutch measurements, the weather forecast and the 5-day forecast. The current observations are measured by KNMI weather stations spread across the country and are updated every 10 minutes. The weather report is updated several times a day by the Buienradar meteorologists.
 
 JSON data copyright: (C)opyright Buienradar / RTL. All rights reserved
 JSON data terms: This feed may be used freely under condition of source reference buienradar.nl including a hyperlink to https://www.buienradar.nl. The feed cannot be derived from users or other persons.
