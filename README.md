@@ -2,7 +2,7 @@
 
 QuickApp BUIENRADAR WEATHER 
 
-The Buienradar Weather contains the current Dutch measurements, the weather forecast and the 5-day forecast. The current observations are measured by KNMI weather stations spread across the country and are updated every 10 minutes. The weather report is updated several times a day by the Buienradar meteorologists.
+The Buienradar Weather contains the current Dutch measurements, the weather forecast and the 5-day forecast. The current observations are measured by KNMI weather stations spread across the country and are updated every 10 minutes. The weather report is updated several times a day by the Buienradar meteorologists. The properties temperature, humidity and wind speed have the Buienradar values. This QuickApp can be used as your weather provider.
 
 JSON data copyright: (C)opyright Buienradar / RTL. All rights reserved
 JSON data terms: This feed may be used freely under condition of source reference buienradar.nl including a hyperlink to https://www.buienradar.nl. The feed cannot be derived from users or other persons.
@@ -17,8 +17,7 @@ Version 0.3 (11th August 2020)
    error message instead of debug message in case of an error
    Changed method of adding QuickApp variables, so they can be edited
 
-Properties temperature, humidity and wind speed have the Buienradar values. This QuickApp can be used as your weather provider. 
-conditionCodes = {unknown = 3200, clear = 32, rain = 40, snow = 38, storm = 666, cloudy = 30, fog = 20,}
+
 
 Station ID's and Stations: 
 6391 Meetstation Arcen / 6275 Meetstation Arnhem / 6249 Meetstation Berkhout / 6308 Meetstation Cadzand / 6260 Meetstation De Bilt / 6235 Meetstation Den Helder / 6370 Meetstation Eindhoven / 6377 Meetstation Ell / 6321 Meetstation Euro platform / 6350 Meetstation Gilze Rijen / 6323 Meetstation Goes / 6283 Meetstation Groenlo-Hupsel / 6280 Meetstation Groningen / 6315 Meetstation Hansweert /  6278 Meetstation Heino /  6356 Meetstation Herwijnen /  6330 Meetstation Hoek van Holland /  6279 Meetstation Hoogeveen / 6251 Meetstation Hoorn Terschelling /  6258 Meetstation Houtribdijk / 6285 Meetstation Huibertgat / 6209 Meetstation IJmond /  6225 Meetstation IJmuiden /  6277 Meetstation Lauwersoog / 6320 Meetstation LE Goeree / 6270 Meetstation Leeuwarden / 6269 Meetstation Lelystad / 6348 Meetstation Lopik-Cabauw / 6380 Meetstation Maastricht / 6273 Meetstation Marknesse / 6286 Meetstation Nieuw Beerta / 6312 Meetstation Oosterschelde / 6344 Meetstation Rotterdam / 6343 Meetstation Rotterdam Geulhaven / 6316 Meetstation Schaar / 6240 Meetstation Schiphol / 6324 Meetstation Stavenisse / 6267 Meetstation Stavoren / 6229 Meetstation Texelhors / 6331 Meetstation Tholen / 6290 Meetstation Twente / 6313 Meetstation Vlakte aan de Raan / 6242 Meetstation Vlieland / 6310 Meetstation Vlissingen / 6375 Meetstation Volkel / 6215 Meetstation Voorschoten / 6319 Meetstation Westdorpe / 6248 Meetstation Wijdenes / 6257 Meetstation Wijk aan Zee / 6340 Meetstation Woensdrecht / 6239 Meetstation Zeeplatform F-3 / 6252 Meetstation Zeeplatform K13
