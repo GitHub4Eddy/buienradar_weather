@@ -3,6 +3,10 @@ This QuickApp can be used as your weather provider. The Buienradar Weather conta
 JSON data copyright: (C)opyright Buienradar / RTL. All rights reserved
 JSON data terms: This feed may be used freely under condition of source reference buienradar.nl including a hyperlink to https://www.buienradar.nl. The feed cannot be derived from users or other persons.
 
+Version 0.6 (9th September 2020)
+- Changed conditionCodes storm = 38, snow = 43 and unknown = unavailable
+- Added weatherdescription "Afwisselend bewolkt met (mogelijk) wat lichte regen" to conditionCode "rain" and and "Afwisselend bewolkt met lokaal mist(banken)" to conditionCode "fog"
+   
 Version 0.5 (4th September 2020)
 - Added wind direction, air pressure and feel temperature to QuickApp labels
 - Changed stationname to regio in labels and log
