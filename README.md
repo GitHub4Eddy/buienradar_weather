@@ -3,6 +3,12 @@ This QuickApp can be used as your weather provider. The Buienradar Weather conta
 JSON data copyright: (C)opyright Buienradar / RTL. All rights reserved
 JSON data terms: This feed may be used freely under condition of source reference buienradar.nl including a hyperlink to https://www.buienradar.nl. The feed cannot be derived from users or other persons.
 
+Wind Chill (based on the JAG/TI-method) and is only valid for temperatures between -46 C and +10 C and is only valid for wind speed between 1.3 m/s and 49 m/s
+
+
+Version 1.0 (25th October 2020)
+- Added weatherdescription "Zwaar bewolkt met wat lichte regen" to conditionCode "rain"
+
 Version 0.6 (9th September 2020)
 - Changed conditionCodes storm = 38, snow = 43 and unknown = unavailable
 - Added weatherdescription "Afwisselend bewolkt met (mogelijk) wat lichte regen" to conditionCode "rain" and and "Afwisselend bewolkt met lokaal mist(banken)" to conditionCode "fog"
