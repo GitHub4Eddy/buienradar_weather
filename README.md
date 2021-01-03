@@ -13,17 +13,17 @@ This QuickApp is plug-and-play. The only thing you can do, is change the Station
 Version 2.0 (3rd January 2021)
 
 •	Added Child Devices for: 
-•	Temperature °C (including feeltemperature and groundtemperature) 
-•	Humidity % 
-•	Absolute humidity g/m³
-•	Airpressure hPa
-•	Windspeed m/s (including windspeedBft and Windgust km/h)
-•	Winddirectiondegrees ° (including winddirection and arrow)
-•	Rain mm/h (including rainFallLast24Hour mm)
-•	Sunpower watt/m²
-•	Visibility km
-•	Sunset (time)
-•	Sunrise (time)
+  •	Temperature °C (including feeltemperature and groundtemperature) 
+  •	Humidity % 
+  •	Absolute humidity g/m³
+  •	Airpressure hPa
+  •	Windspeed m/s (including windspeedBft and Windgust km/h)
+  •	Winddirectiondegrees ° (including winddirection and arrow)
+  •	Rain mm/h (including rainFallLast24Hour mm)
+  •	Sunpower watt/m²
+  •	Visibility km
+  •	Sunset (time)
+  •	Sunrise (time)
 •	Re-arranged the labels
 •	Added backup station functionality for weather stations that don't have all the data, the data from 6260 Meetstation De Bilt is used. 
 •	Improved check for missing data
