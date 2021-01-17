@@ -10,8 +10,20 @@ This QuickApp is plug-and-play. The only thing you can do, is change the Station
 •	conditionCodes = {unavailable = 3200, clear = 32, rain = 40, snow = 43, storm = 38, cloudy = 30, fog = 20,}
 •	The time shown in the QuickApp, is the last time of the measurement from Buienradar (not the system time)
 
-Version 2.0 (3rd January 2021)
 
+Version 2.1 (15th January 2021)
+•	Added weatherdescription: 
+  •	"Mix van opklaringen en hoge bewolking" to conditioncode "cloudy"
+  •	"Half bewolkt" to conditioncode "cloudy"
+  •	"Opklaring en lokaal nevel of mist" to conditioncode "fog"
+  •	"Zwaar bewolkt met lichte sneeuwval" to conditionCode "snow"
+  •	"Zwaar bewolkt met regen en winterse neerslag" to conditioncode "snow"
+  •	"Afwisselend bewolkt met lichte sneeuwval" to conditioncode "snow"
+  •	"Zware sneeuwval" to conditioncode "snow"
+  •	"Opklaringen en kans op enkele pittige (onweers)buien" to conditioncode "rain"
+•	Added Airpressure Text in log of Airpressure Child Device
+
+Version 2.0 (3rd January 2021)
 •	Added Child Devices for: 
   •	Temperature °C (including feeltemperature and groundtemperature) 
   •	Humidity % 
@@ -58,7 +70,7 @@ QuickApp Variables mandatory (automatically created):
 •	stationID = Number of the station you want to use for weather measurements (default = 6260 Meetstation De Bilt)
 •	backupstationID = Number of the backup station for missing weather data from stations that don't have all the data (default = 6260 Meetstation De Bilt). Don't change this ID unless you know what you are doing, 
 •	setGlobalVar = true or false, whether you want tu use the Global Variables (default = false)
-•	debuglevel = Number (1=some, 2=few, 3=all) (default = 1)
+•	debugLevel = Number (1=some, 2=few, 3=all) (default = 1)
 
 Station ID's and Stations: 
 6391 Meetstation Arcen / 6275 Meetstation Arnhem / 6249 Meetstation Berkhout / 6308 Meetstation Cadzand / 6260 Meetstation De Bilt / 6235 Meetstation Den Helder / 6370 Meetstation Eindhoven / 6377 Meetstation Ell / 6321 Meetstation Euro platform / 6350 Meetstation Gilze Rijen / 6323 Meetstation Goes / 6283 Meetstation Groenlo-Hupsel / 6280 Meetstation Groningen / 6315 Meetstation Hansweert /  6278 Meetstation Heino /  6356 Meetstation Herwijnen /  6330 Meetstation Hoek van Holland /  6279 Meetstation Hoogeveen / 6251 Meetstation Hoorn Terschelling /  6258 Meetstation Houtribdijk / 6285 Meetstation Huibertgat / 6209 Meetstation IJmond /  6225 Meetstation IJmuiden /  6277 Meetstation Lauwersoog / 6320 Meetstation LE Goeree / 6270 Meetstation Leeuwarden / 6269 Meetstation Lelystad / 6348 Meetstation Lopik-Cabauw / 6380 Meetstation Maastricht / 6273 Meetstation Marknesse / 6286 Meetstation Nieuw Beerta / 6312 Meetstation Oosterschelde / 6344 Meetstation Rotterdam / 6343 Meetstation Rotterdam Geulhaven / 6316 Meetstation Schaar / 6240 Meetstation Schiphol / 6324 Meetstation Stavenisse / 6267 Meetstation Stavoren / 6229 Meetstation Texelhors / 6331 Meetstation Tholen / 6290 Meetstation Twente / 6313 Meetstation Vlakte aan de Raan / 6242 Meetstation Vlieland / 6310 Meetstation Vlissingen / 6375 Meetstation Volkel / 6215 Meetstation Voorschoten / 6319 Meetstation Westdorpe / 6248 Meetstation Wijdenes / 6257 Meetstation Wijk aan Zee / 6340 Meetstation Woensdrecht / 6239 Meetstation Zeeplatform F-3 / 6252 Meetstation Zeeplatform K13
