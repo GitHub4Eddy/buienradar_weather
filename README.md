@@ -1,6 +1,6 @@
 QuickApp BUIENRADAR WEATHER 
 
-This QuickApp can be used as your weather provider. The Buienradar Weather QuickApp contains the current Dutch weather measurements, the weather forecast and the 5-day forecast. The current observations are measured by KNMI weather stations spread across The Netherlands and are updated every 10 minutes. The weather report is updated several times a day by the Buienradar meteorologists.
+This QuickApp (for the Fibaro Homecenter 3) can be used as your weather provider. The Buienradar Weather QuickApp contains the current Dutch weather measurements, the weather forecast and the 5-day forecast. The current observations are measured by KNMI weather stations spread across The Netherlands and are updated every 10 minutes. The weather report is updated several times a day by the Buienradar meteorologists.
 
 This QuickApp is plug-and-play. The only thing you can do, is change the Station ID to a weatherstation nearby from the list or add some nice icons to the devices. 
 
