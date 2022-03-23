@@ -1,17 +1,71 @@
 QuickApp BUIENRADAR WEATHER 
 
-This QuickApp (for the Fibaro Homecenter 3) can be used as your weather provider. The Buienradar Weather QuickApp contains the current Dutch weather measurements, the weather forecast and the 5-day forecast. The current observations are measured by KNMI weather stations spread across The Netherlands and are updated every 10 minutes. The weather report is updated several times a day by the Buienradar meteorologists.
+This QuickApp can be used as your Fibaro Homecenter 3 Weather Provider (Settings - 6. General - Main - Main Devices - Weather Provider)
+The Buienradar Weather QuickApp contains the current Dutch weather measurements, the weather forecast and the 5-day forecast 
+The 5-days forecast is shown in the labels and the tomorrow forecast is shown in the child devices 
+The current observations are measured by KNMI weather stations spread across The Netherlands and are updated every 10 minutes 
+The weather report is updated several times a day by the Buienradar meteorologists 
 
+The QuickApp has child devices for:
+- Temperature °C 
+- Feel temperature °C 
+- Ground temperature °C 
+- Humidity % 
+- Absolute humidity g/m³
+- Airpressure hPa
+- Windspeed m/s 
+- Windspeed km/h
+- Winddirectiondegrees ° (plus wind direction and arrow)
+- Windspeed Bft
+- Windgusts km/h
+- Rain mm/h 
+- Rain Last 24h mm
+- Sunpower Watt/m²
+- Visibility km
+- Sunset (time)
+- Sunrise (time)
+- Sun Chance tomorrow % 
+- Min Temp tomorrow °C
+- Max Temp tomorrow °C
+- Rain Chance tomorrow % 
+- Min Rain tomorrow mm/h
+- Max Rain tomorrow mm/h
+- Wind tomorrow m/s (plus wind direction and arrow)
+- Wind tomorrow km/h (plus wind direction and arrow)
+  
 This QuickApp is plug-and-play. The only thing you can do, is change the Station ID to a weatherstation nearby from the list or add some nice icons to the devices. 
 
-•	Wind Chill (based on the JAG/TI-method) and is only valid for temperatures between -46 C and +10 C and is only valid for wind speed between 1.3 m/s and 49 m/s
-•	Windspeed is shown in m/s (km/3.6)
-•	Absolute humidity is the measure of water vapor (moisture) in the air, regardless of temperature. It is expressed as grams of moisture per cubic meter of air (g/m3) 
-•	conditionCodes = {unavailable = 3200, clear = 32, rain = 40, snow = 43, storm = 38, cloudy = 30, fog = 20,}
-•	The time shown in the QuickApp, is the last time of the measurement from Buienradar (not the system time)
+Wind Chill (based on the JAG/TI-method) and is only valid for temperatures between -46 C and +10 C and is only valid for wind speed between 1.3 m/s and 49 m/s
+Windspeed is shown in m/s (km/3.6)
+Absolute humidity is the measure of water vapor (moisture) in the air, regardless of temperature. It is expressed as grams of moisture per cubic meter of air (g/m3) 
+conditionCodes = {unavailable = 3200, clear = 32, rain = 40, snow = 43, storm = 38, cloudy = 30, fog = 20,}
+The time shown in the QuickApp, is the last time of the measurement from Buienradar (not the system time)
 
+Changes version 3.0 (23rd March 2022)
+ vAdded 5-days forecast to the labels
+•	Addded child devices for:
+  •	Feel temperature °C 
+  •	Ground temperature °C 
+  •	Windspeed km/h
+  •	Windspeed Bft
+  •	Windgusts km/h
+  •	Rain Last 24h mm
+  •	Sun Chance tomorrow % 
+  •	Min Temp tomorrow °C
+  •	Max Temp tomorrow °C
+  •	Rain Chance tomorrow % 
+  •	Min Rain tomorrow mm/h
+  •	Max Rain tomorrow mm/h
+  •	Wind tomorrow m/s (plus wind direction and arrow)
+  •	Wind tomorrow km/h (plus wind direction and arrow)
+•	Changed SunPower device type to powerSensor
+•	Changed all Wind devices types to windSensor
+•	Converted date-times to more nice format
+•	Quickapp variable setGlobalVar changed to boolean
+•	Added Quickapp variable stationWarning to show a warning (once) if your station hasn't got some weather value (default is true)
+•	Optimised some code
 
-Version 2.1 (15th January 2021)
+Changes version 2.1 (15th January 2021)
 •	Added weatherdescription: 
   •	"Mix van opklaringen en hoge bewolking" to conditioncode "cloudy"
   •	"Half bewolkt" to conditioncode "cloudy"
@@ -23,7 +77,7 @@ Version 2.1 (15th January 2021)
   •	"Opklaringen en kans op enkele pittige (onweers)buien" to conditioncode "rain"
 •	Added Airpressure Text in log of Airpressure Child Device
 
-Version 2.0 (3rd January 2021)
+Changes version 2.0 (3rd January 2021)
 •	Added Child Devices for: 
   •	Temperature °C (including feeltemperature and groundtemperature) 
   •	Humidity % 
@@ -41,26 +95,26 @@ Version 2.0 (3rd January 2021)
 •	Improved check for missing data
 •	Added Quickapp variable for debug level (1=some, 2=few, 3=all). Recommended default value is 1.
 
-Version 1.0 (25th October 2020)
+Changes version 1.0 (25th October 2020)
 •	Added weatherdescription "Zwaar bewolkt met wat lichte regen" to conditionCode "rain"
 
-Version 0.6 (9th September 2020)
+Changes version 0.6 (9th September 2020)
 •	Changed conditionCodes storm = 38, snow = 43 and unknown = unavailable
 •	Added weatherdescription "Afwisselend bewolkt met (mogelijk) wat lichte regen" to conditionCode "rain" and and "Afwisselend bewolkt met lokaal mist(banken)" to conditionCode "fog"
 
-Version 0.5 (4th September 2020)
+Changes version 0.5 (4th September 2020)
 •	Added wind direction, air pressure and feel temperature to QuickApp labels
 •	Changed stationname to regio in labels and log
 •	Changed the names of the Global Variables to meet the Fibaro standards and shortened them (please manually delete your old ones and change the names in your scenes)
 •	Added an extra check for response of Buienradar (jsonTable)
 
-Version 0.4 (23rd August 2020) 
+Changes version 0.4 (23rd August 2020) 
 •	Completely renewed code
 •	Several Global Variables are available for personal use
 •	Addes QuickApp variable SetGlobalVar true or false, whether you want to use the Global Variables
 •	Added QuickApp variable Timeout for finetuning waiting for response
 
-Version 0.3 (11th August 2020)
+Changes version 0.3 (11th August 2020)
 •	Error message instead of debug message in case of an error
 •	Changed method of adding QuickApp variables, so they can be edited
 
@@ -70,6 +124,7 @@ QuickApp Variables mandatory (automatically created):
 •	stationID = Number of the station you want to use for weather measurements (default = 6260 Meetstation De Bilt)
 •	backupstationID = Number of the backup station for missing weather data from stations that don't have all the data (default = 6260 Meetstation De Bilt). Don't change this ID unless you know what you are doing, 
 •	setGlobalVar = true or false, whether you want tu use the Global Variables (default = false)
+•	stationWarning = true or false, whether you want to receive warnings if your station hasn't got some weather value (default is true)
 •	debugLevel = Number (1=some, 2=few, 3=all) (default = 1)
 
 Station ID's and Stations: 
@@ -82,7 +137,6 @@ Global Variables (if QuickApp variable setGlobalVar = true):
 •	brWeatherreport_[deviceID]
 •	brShortterm_[deviceID]
 •	brLongterm_[deviceID]
-•	brFivedayforecast_1_[deviceID]
 •	brFivedayforecast_2_[deviceID]
 •	brFivedayforecast_3_[deviceID]
 •	brFivedayforecast_4_[deviceID]
