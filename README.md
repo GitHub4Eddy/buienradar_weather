@@ -65,6 +65,12 @@ Changes version 3.0 (23rd March 2022)
 •	Added Quickapp variable stationWarning to show a warning (once) if your station hasn't got some weather value (default is true)
 •	Optimised some code
 
+Changes version 5.0 (18th June 2026)
+- Changed all the json names back because someone at Buienradar changed them AGAIN
+
+Changes version 4.0 (15th June 2026)
+- Changed all the json names because someone at Buienradar changed them
+
 Changes version 2.1 (15th January 2021)
 •	Added weatherdescription: 
   •	"Mix van opklaringen en hoge bewolking" to conditioncode "cloudy"
